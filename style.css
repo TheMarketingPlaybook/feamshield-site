@@ -1,0 +1,20 @@
+:root { --bg:#0a0a0a; --fg:#f5f5f5; --muted:#b7b7b7; --accent:#3a7afe; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: Inter, Arial, sans-serif; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
+.brand { font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+nav a { margin-left: 18px; color: var(--fg); text-decoration: none; }
+.btn { padding: 10px 16px; border: 1px solid var(--fg); border-radius: 6px; text-decoration: none; color: var(--fg); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+.hero { background: linear-gradient(180deg, rgba(58,122,254,.2), rgba(0,0,0,.0)); }
+.hero-inner { max-width: 1000px; margin: 0 auto; padding: 96px 24px 72px; text-align: left; }
+.hero h1 { font-size: 44px; line-height: 1.1; margin: 0 0 16px; }
+.hero p { max-width: 720px; color: var(--muted); margin: 0 0 24px; }
+.cta-row a { margin-right: 12px; }
+.tech-snapshot, .partner-program, .applications, .contact-strip { padding: 48px 0; }
+.steps { margin: 12px 0 0 16px; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+.tile { display: block; border: 1px solid #222; padding: 24px; border-radius: 8px; color: var(--fg); text-decoration: none; background: #111; }
+.site-footer { border-top: 1px solid #1c1c1c; }
+.site-footer p { color: var(--muted); }
