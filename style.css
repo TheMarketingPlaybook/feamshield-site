@@ -3,7 +3,14 @@
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: Inter, Arial, sans-serif; }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 24px; }
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
-.brand { font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+.brand {
+  font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: .06em;
+  font-size: clamp(28px, 6vw, 56px);
+  color: var(--fg);
+  text-decoration: none;
+}
 nav a { margin-left: 18px; color: var(--fg); text-decoration: none; }
 .btn { padding: 10px 16px; border: 1px solid var(--fg); border-radius: 6px; text-decoration: none; color: var(--fg); }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
